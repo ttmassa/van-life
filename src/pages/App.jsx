@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import '../styles.css'
 import Home from './Home'
 import About from './About'
+import Vans from './Vans'
 import Header from '../components/Header'
 
 export default function App() {
@@ -13,7 +14,7 @@ export default function App() {
           <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/about' element={<About activeLink="/about"/>}/>
-            <Route path='/vans'/>
+            <Route path='/vans' element={<Vans />}/>
           </Routes>
         </div>
       </Router>
