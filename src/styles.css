@@ -197,3 +197,20 @@ header {
   background-color: #000000;
   transform: translateY(1px);
 }
+
+/* Media queries for mobiles */
+
+@media only screen and (max-width: 767px) {
+  /* Home */
+
+  .home--main {
+    min-width: 40vh;
+    height: 450px;
+  }
+
+  /* About */
+
+  .about--container {
+    min-width: 30vh;
+  }
+}
