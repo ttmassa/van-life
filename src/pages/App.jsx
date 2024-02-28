@@ -5,6 +5,7 @@ import Home from './Home'
 import About from './About'
 import Vans from './Vans'
 import Header from '../components/Header'
+import '../server/server.js'
 
 export default function App() {
   return (
