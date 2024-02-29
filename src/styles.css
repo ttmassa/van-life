@@ -292,6 +292,20 @@ header {
   .about--container {
     min-width: 30vh;
   }
+
+  /* Van page */
+  .van--page {
+    margin: 2vh 5vh 0 5vh;
+  }
+
+  .van--container {
+    width: 20vh;
+  }
+
+  .van--title {
+    font-size: 28px;
+    margin-left: 0;
+  }
 }
 
 /* Media queries for computers */
