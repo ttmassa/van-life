@@ -11,7 +11,7 @@ export default function Van(props) {
                     <p className='van--day'>/day</p>
                 </div>
             </div>
-            <p className='van--type'>{props.type}</p>
+            <p className={`van--type ${props.type}`}>{props.type}</p>
         </div>
     )
 }

@@ -255,12 +255,25 @@ header {
 }
 
 .van--type {
+  cursor: pointer;
   font-size: 16px;
   color: #FFEAD0;
   background-color: #E17654;
   border-radius: 5px;
   padding: 8px 15px;
   align-self: flex-start;
+}
+
+.van--type.Rugged {
+  background-color: #115E59;
+}
+
+.van--type.Luxury {
+  background-color: #161616;
+}
+
+.van--type:focus {
+  outline: none;
 }
 
 /* Media queries for mobiles */
