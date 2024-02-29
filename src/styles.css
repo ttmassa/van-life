@@ -198,6 +198,47 @@ header {
   transform: translateY(1px);
 }
 
+/* Van */
+
+
+.van--container {
+  border: 1px solid #FFCC8D;
+  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.van--image {
+  max-width: 230px;
+}
+
+.van--info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.van--name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.van--price {
+  font-size: 20px;
+}
+
+.van--day {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.van--type {
+  font-size: 16px;
+  color: #FFEAD0;
+  background-color: #E17654;
+  border-radius: 5px;
+}
+
 /* Media queries for mobiles */
 
 @media only screen and (max-width: 767px) {
