@@ -200,16 +200,38 @@ header {
 
 /* Van */
 
+.van--page {
+  background-color: #FFF7ED;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.8rem;
+  margin: 0 10vh 0 10vh;
+}
+
+.van--section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 
 .van--container {
-  border: 1px solid #FFCC8D;
   max-width: 230px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.van--title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #161616;
 }
 
 .van--image {
+  cursor: pointer;
   max-width: 230px;
+  border-radius: 5px;
 }
 
 .van--info {
@@ -237,7 +259,8 @@ header {
   color: #FFEAD0;
   background-color: #E17654;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 8px 15px;
+  align-self: flex-start;
 }
 
 /* Media queries for mobiles */

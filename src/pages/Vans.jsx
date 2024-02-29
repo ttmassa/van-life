@@ -23,7 +23,10 @@ export default function Vans() {
 
     return (
         <main className='van--page'>
-            {vansList}
+            <h2 className='van--title'>Explore our Van options</h2>
+            <div className='van--section'>
+                {vansList}
+            </div>
         </main>
     )
 }
