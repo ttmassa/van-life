@@ -212,14 +212,15 @@ header {
 .van--section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  justify-content: center;
+  gap: 34px;
 }
 
 .van--container {
   max-width: 230px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .van--title {
