@@ -237,6 +237,7 @@ header {
   color: #FFEAD0;
   background-color: #E17654;
   border-radius: 5px;
+  padding: 5px 10px;
 }
 
 /* Media queries for mobiles */
