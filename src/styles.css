@@ -293,3 +293,12 @@ header {
     min-width: 30vh;
   }
 }
+
+/* Media queries for computers */
+
+@media only screen and (min-width: 768px) {
+  /* Van page */
+  .van--section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
