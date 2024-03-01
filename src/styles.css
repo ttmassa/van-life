@@ -63,6 +63,12 @@ header {
   text-align: right;
 }
 
+/* Footer */
+
+.footer {
+  height: 6vh;
+}
+
 /* Home */
 
 .home--page {
@@ -99,7 +105,7 @@ header {
   font-size: 16px;
 }
 
-.home--button {
+.home--button, .vandetail--button {
   cursor: pointer;
   padding: 15px 60px 15px 60px;
   background-color: #FF8C38;
@@ -114,7 +120,7 @@ header {
   text-decoration: none;
 }
 
-.home--button:active, .home--button:hover {
+.home--button:active, .home--button:hover, .vandetail--button:active, .vandetail--button:hover{
   background-color: #ea7d2f;
   transform: translateY(1px);
 }
@@ -140,11 +146,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   align-self: center;
   gap: 30px;
-  min-width: 70vh;
-  margin: auto 50vh;
+  min-width: 80vh;
+  margin: auto 30vh 0 30vh;
   box-sizing: border-box;
 }
 
@@ -179,6 +184,9 @@ header {
   line-height: 1.7rem;
 }
 
+.about--explore-text {
+  margin-bottom: 1vh;
+}
 
 .about--explore-button {
   cursor: pointer;
@@ -261,6 +269,7 @@ header {
 }
 
 .van--type {
+  cursor: pointer;
   font-size: 16px;
   color: #FFEAD0;
   background-color: #E17654;
@@ -279,6 +288,64 @@ header {
 
 .van--type:focus {
   outline: none;
+}
+
+/* Van detail page */
+
+.vandetail--container {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  margin: 2vh auto 0 auto;
+  flex: 1;
+}
+
+.vandetail--return {
+  cursor: pointer;
+  color: #201F1D;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid #201F1D;
+  align-self: start;
+}
+
+.vandetail--return:focus {
+  color: #434242;
+  translate: translateY(1px);
+}
+
+.vandetail--image {
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 2vh 0 2vh 0;
+}
+
+.vandetail--name {
+  color: #161616;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.vandetail--price {
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.vandetail--price > span {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.vandetail--descr {
+  color: #161616;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 2vh;
 }
 
 /* Media queries for mobiles */
@@ -310,12 +377,20 @@ header {
     font-size: 28px;
     margin-left: 0;
   }
+
+  /* Van detail page */
+  .vandetail--container {
+    max-width: 380px;
+    margin: 0 2vh 0 2vh;
+  }
+
 }
 
 /* Media queries for computers */
 
 @media only screen and (min-width: 768px) {
   /* Van page */
+
   .van--section {
     grid-template-columns: repeat(3, 1fr);
   }

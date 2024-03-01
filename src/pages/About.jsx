@@ -5,7 +5,7 @@ import carImage from '../assets/about-car.png'
 export default function About() {
     return (
         <main className='about--page'>
-                <img className='about--image' alt='Man sitting on a car' src={carImage}/>
+            <img className='about--image' alt='Man sitting on a car' src={carImage}/>
             <div className='about--container'>
                 <h1 className='about--title'>
                     Don't squeeze in a sedan when 
@@ -27,7 +27,7 @@ export default function About() {
                     on 4 wheels.
                 </p>
                 <section className='about--explore-section'>
-                    <div>
+                    <div className='about--explore-text'>
                         <h2 className='about--explore-title'>
                             Your destination is waiting.
                             <br/>
