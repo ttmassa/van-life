@@ -209,17 +209,17 @@ header {
 /* Van */
 
 .van--page {
+  padding-inline: 4.75vh;
   background-color: #FFF7ED;
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 1.8rem;
-  margin: 0 10vh 0 10vh;
 }
 
 .van--section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   gap: 34px;
 }
@@ -293,7 +293,8 @@ header {
 /* Van detail page */
 
 .vandetail--container {
-  max-width: 550px;
+  padding-inline: 4.75vh;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -346,6 +347,10 @@ header {
   font-weight: 500;
   text-align: left;
   margin-bottom: 2vh;
+}
+
+.vandetail--button {
+  margin-bottom: 6vh;
 }
 
 /* Media queries for mobiles */

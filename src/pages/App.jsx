@@ -6,7 +6,7 @@ import About from './About'
 import Vans from './Vans'
 import VanDetail from './VanDetail'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 import '../server/server.js'
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
             <Route path='/vans' element={<Vans />}/>
             <Route path='/vans/:id' element={<VanDetail />} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </Router>
   )
