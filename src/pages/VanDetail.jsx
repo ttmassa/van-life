@@ -6,4 +6,4 @@ export default function VanDetail() {
       <h1>Van Detail</h1>
     </div>
   )
-  }
+}

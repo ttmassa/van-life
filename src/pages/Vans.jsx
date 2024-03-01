@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Van from '../components/Van'
+import VanDetail from './VanDetail'
 
 export default function Vans() {
     const [vans, setVans] = useState([])

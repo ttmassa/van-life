@@ -217,10 +217,12 @@ header {
 }
 
 .van--container {
+  color: #161616;
   max-width: 230px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  text-decoration: none;
 }
 
 .van--title {
@@ -230,7 +232,6 @@ header {
 }
 
 .van--image {
-  cursor: pointer;
   max-width: 230px;
   border-radius: 5px;
 }
@@ -246,6 +247,10 @@ header {
   font-weight: 600;
 }
 
+.van--container:hover .van--name {
+  text-decoration: underline;
+}
+
 .van--price {
   font-size: 20px;
 }
@@ -256,7 +261,6 @@ header {
 }
 
 .van--type {
-  cursor: pointer;
   font-size: 16px;
   color: #FFEAD0;
   background-color: #E17654;
