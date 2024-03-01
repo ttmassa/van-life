@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Van from '../components/Van'
-import VanDetail from './VanDetail'
 
 export default function Vans() {
     const [vans, setVans] = useState([])
@@ -15,6 +14,7 @@ export default function Vans() {
     const vansList = vans.map(van => (
         <Van
             key={van.id}
+            id={van.id}
             image={van.imageUrl}
             name={van.name}
             price={van.price}
