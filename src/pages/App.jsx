@@ -5,20 +5,21 @@ import Home from './Home'
 import About from './About'
 import Vans from './Vans'
 import VanDetail from './VanDetail'
-import Header from '../components/Header'
 // import Footer from '../components/Footer'
+import Layout from '../components/Layout.jsx'
 import '../server/server.js'
 
 export default function App() {
   return (
       <Router>
         <div className='main--container'>
-          <Header />
           <Routes>
-            <Route path='/' element={<Home />}/>
-            <Route path='/about' element={<About activeLink="/about"/>}/>
-            <Route path='/vans' element={<Vans />}/>
-            <Route path='/vans/:id' element={<VanDetail />} />
+            <Route element={<Layout />}>
+              <Route path='/' element={<Home />}/>
+              <Route path='/about' element={<About activeLink="/about"/>}/>
+              <Route path='/vans' element={<Vans />}/>
+              <Route path='/vans/:id' element={<VanDetail />} />
+            </Route>
           </Routes>
           {/* <Footer /> */}
         </div>

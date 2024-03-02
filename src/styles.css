@@ -21,6 +21,13 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* Layout */
+.layout--main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 /* Header */
 
 header {
@@ -82,7 +89,6 @@ header {
 }
 
 .home--main {
-  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,6 +134,7 @@ header {
 /* About */
 
 .about--page {
+  border: 1px solid #e10c0c;
   background-color: #FFF7ED;
   display: flex;
   flex-direction: column;
