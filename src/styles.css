@@ -134,7 +134,6 @@ header {
 /* About */
 
 .about--page {
-  border: 1px solid #e10c0c;
   background-color: #FFF7ED;
   display: flex;
   flex-direction: column;
