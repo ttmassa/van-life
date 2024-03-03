@@ -7,6 +7,10 @@ import Vans from './Vans/Vans.jsx'
 import VanDetail from './Vans/VanDetail.jsx'
 // import Footer from '../components/Footer'
 import Layout from '../components/Layout.jsx'
+import HostLayout from '../components/HostLayout.jsx'
+import Dashboard from './Host/Dashboard.jsx'
+import Income from './Host/Income.jsx'
+import Reviews from './Host/Reviews.jsx'
 import '../server/server.js'
 
 export default function App() {
@@ -19,6 +23,11 @@ export default function App() {
               <Route path='/about' element={<About activeLink="/about"/>}/>
               <Route path='/vans' element={<Vans />}/>
               <Route path='/vans/:id' element={<VanDetail />} />
+              <Route element={<HostLayout />}>
+                <Route path='/host' element={<Dashboard />}/>
+                <Route path='/host/income' element={<Income />}/>
+                <Route path='/host/reviews' element={<Reviews />}/>
+              </Route>
             </Route>
           </Routes>
           {/* <Footer /> */}

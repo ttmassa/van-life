@@ -359,6 +359,32 @@ header {
   margin-bottom: 6vh;
 }
 
+/* Host Layout */
+
+.hostlayout--main {
+  margin-top: 2vh;
+}
+
+.hostlayout--header {
+  padding-inline: 4.75vh;
+  display: flex;
+  gap: 40px;
+}
+
+.hostlayout--link {
+  color: #4D4D4D;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: right;
+}
+
+.hostlayout--link:hover {
+  color: #161616;
+  text-decoration: underline;
+  box-sizing: border-box;
+}
+
 /* Media queries for mobiles */
 
 @media only screen and (max-width: 767px) {
