@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function HostedVan(props) {
     return (
-        <Link className='hostvanlist--main'>
+        <Link className='hostvanlist--main' to={`/host/vans/${props.id}`}>
             <img className='hostvanlist--image' src={props.image} alt='miniature of van'/>
             <div>
                 <p className='hostvanlist--name'>{props.name}</p>
