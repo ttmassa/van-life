@@ -11,6 +11,8 @@ import HostLayout from '../components/HostLayout.jsx'
 import Dashboard from './Host/Dashboard.jsx'
 import Income from './Host/Income.jsx'
 import Reviews from './Host/Reviews.jsx'
+import HostVans from './Host/HostVans.jsx'
+import HostVanDetail from './Host/HostVanDetail.jsx'
 import '../server/server.js'
 
 export default function App() {
@@ -28,6 +30,8 @@ export default function App() {
                 <Route index element={<Dashboard />}/>
                 <Route path='income' element={<Income />}/>
                 <Route path='reviews' element={<Reviews />}/>
+                <Route path='vans' element={<HostVans />}/>
+                <Route path='vans/:id' element={<HostVanDetail />}/>
               </Route>
             </Route>
           </Routes>
