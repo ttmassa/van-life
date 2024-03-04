@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import HostedVan from '../../components/HostedVan'
 
 export default function HostVans() {
     const [vans, setVans] = useState([])
@@ -12,9 +13,20 @@ export default function HostVans() {
         console.log(vans)
     }, [])
 
+    const hostVansList = vans.map(van => {
+        return <HostedVan 
+            key={van.id}
+            id={van.id}
+            image={van.imageUrl}
+            name={van.name}
+            price={van.price}
+        />
+    })
+
     return (
-       <div>
-            <h1>Host Vans List</h1>
+       <div className='hostvan--page'>
+        <h2>Your listed vans</h2>
+        {hostVansList}
        </div> 
     )
 }

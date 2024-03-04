@@ -388,6 +388,7 @@ header {
   padding-inline: 4.75vh;
   display: flex;
   gap: 40px;
+  margin-bottom: 5vh;
 }
 
 .hostlayout--link {
@@ -409,6 +410,48 @@ header {
   font-weight: 700;
   text-align: right;
   text-decoration: underline;
+}
+
+/* Host Van */
+
+.hostvan--page {
+  padding-inline: 4.75vh;
+  background-color: #FFF7ED;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-bottom: 5vh;
+}
+
+.hostvan--page  > h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.hostvanlist--main {
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding-inline: 4.75vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2vh;
+  padding: 2vh 4.75vh 2vh 4.75vh;
+}
+
+.hostvanlist--image {
+  max-width: 70px;
+  border-radius: 5px;
+}
+
+.hostvanlist--name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hostvanlist--price {
+  color: #4D4D4D;
 }
 
 /* Media queries for mobiles */
