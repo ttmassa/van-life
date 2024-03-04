@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
-export default function Header(props) {
+export default function Header() {
     return (
         <header>
             <Link className='header--title' to="/">#VANLIFE</Link> 
             <nav className='header--nav'>
-                <Link className={(props.activeLink === '/about' ? 'active-link' : 'header--link')} to="/about">About</Link>
-                <Link className={(props.activeLink === '/vans' ? 'active-link' : 'header--link')} to="/vans">Vans</Link>
-                <Link className={(props.activeLink === '/host' ? 'active-link' : 'header--link')} to="/host">Host</Link>
+                <NavLink className={({ isActive }) => isActive ? "active-link" : "header--link"} to="/about">About</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "active-link" : "header--link"} to="/vans">Vans</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "active-link" : "header--link"} to="/host">Host</NavLink>
             </nav>
         </header>
     )

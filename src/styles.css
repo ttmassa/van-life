@@ -42,10 +42,9 @@ header {
 .active-link {
   color: #161616;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 900;
   text-align: right;
-  text-decoration: none;
-  border-bottom: 2px solid #161616;
+  text-decoration: underline;
 }
 
 .header--title {
@@ -401,6 +400,14 @@ header {
 
 .hostlayout--link:hover {
   color: #161616;
+  text-decoration: underline;
+}
+
+.host--active-link {
+  color: #161616;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
   text-decoration: underline;
 }
 
