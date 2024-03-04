@@ -431,6 +431,7 @@ header {
 .hostvanlist--main {
   cursor: pointer;
   background-color: #FFFFFF;
+  color: #161616;
   border-radius: 6px;
   padding-inline: 4.75vh;
   display: flex;
@@ -438,6 +439,7 @@ header {
   align-items: center;
   gap: 2vh;
   padding: 2vh 4.75vh 2vh 4.75vh;
+  text-decoration: none;
 }
 
 .hostvanlist--image {
