@@ -528,6 +528,20 @@ header {
   font-weight: 500;
 }
 
+/* Host Van Pricing */
+
+.hostvanpricing--price{
+  color: #161616;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.hostvanpricing--price > span {
+  color: #4D4D4D;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 /* Media queries for mobiles */
 
 @media only screen and (max-width: 767px) {
