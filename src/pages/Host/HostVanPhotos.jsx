@@ -1,9 +1,12 @@
 import React from 'react'
+import { useOutletContext } from 'react-router-dom'
 
 export default function HostVanPhotos() {
+    const { van } = useOutletContext()
+
     return (
         <div>
-            <h1>Host Van Photos</h1>
+            <img className='hostvanphotos--image' src={van.imageUrl} alt='van'/>
         </div>
     )
 }

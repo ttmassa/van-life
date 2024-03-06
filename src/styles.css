@@ -542,6 +542,13 @@ header {
   font-weight: 700;
 }
 
+/* Host Van Photos */
+
+.hostvanphotos--image {
+  max-width: 110px;
+  border-radius: 5px;
+}
+
 /* Media queries for mobiles */
 
 @media only screen and (max-width: 767px) {
