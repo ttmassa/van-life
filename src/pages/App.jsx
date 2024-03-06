@@ -5,7 +5,6 @@ import Home from './Home'
 import About from './About'
 import Vans from './Vans/Vans.jsx'
 import VanDetail from './Vans/VanDetail.jsx'
-// import Footer from '../components/Footer'
 import Layout from '../components/Layout.jsx'
 import HostLayout from '../components/HostLayout.jsx'
 import Dashboard from './Host/Dashboard.jsx'
@@ -35,7 +34,6 @@ export default function App() {
               </Route>
             </Route>
           </Routes>
-          {/* <Footer /> */}
         </div>
       </Router>
   )
