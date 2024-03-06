@@ -510,16 +510,23 @@ header {
   margin-bottom: 2vh;
 }
 
-.hostvandetail--category {
+/* Host Van Info */
+
+.hostvaninfo--main {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.hostvaninfo--main > h4 {
   color: #161616;
   font-size: 14px;
   font-weight: 700;
 }
 
-.hostvandetail--category > span {
+.hostvaninfo--main > h4 > span {
   font-weight: 500;
 }
-
 
 /* Media queries for mobiles */
 

@@ -12,6 +12,9 @@ import Income from './Host/Income.jsx'
 import Reviews from './Host/Reviews.jsx'
 import HostVans from './Host/HostVans.jsx'
 import HostVanDetail from './Host/HostVanDetail.jsx'
+import HostVanInfo from './Host/HostVanInfo.jsx'
+import HostVanPhotos from './Host/HostVanPhotos.jsx'
+import HostVanPricing from './Host/HostVanPricing.jsx'
 import '../server/server.js'
 
 export default function App() {
@@ -30,7 +33,11 @@ export default function App() {
                 <Route path='income' element={<Income />}/>
                 <Route path='reviews' element={<Reviews />}/>
                 <Route path='vans' element={<HostVans />}/>
-                <Route path='vans/:id' element={<HostVanDetail />}/>
+                <Route path='vans/:id' element={<HostVanDetail />}>
+                  <Route index element={<HostVanInfo />}/>
+                  <Route path='pricing' element={<HostVanPricing />}/>
+                  <Route path='photos' element={<HostVanPhotos />}/>
+                </Route>
               </Route>
             </Route>
           </Routes>

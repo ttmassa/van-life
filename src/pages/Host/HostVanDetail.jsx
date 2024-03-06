@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, NavLink, useParams, Outlet } from 'react-router-dom'
 
 export default function HostVansDetail() {
     const params = useParams()
@@ -35,14 +35,11 @@ export default function HostVansDetail() {
                     </div>
                 </div>
                 <nav>
-                    <Link className='hostlayout--link'>Details</Link>
-                    <Link className='hostlayout--link'>Pricing</Link>
-                    <Link className='hostlayout--link'>Photos</Link>
+                    <NavLink className={({ isActive }) => isActive ? "host--active-link" : "hostlayout--link"} end to={'.'}>Details</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? "host--active-link" : "hostlayout--link"} to={'pricing'}>Pricing</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? "host--active-link" : "hostlayout--link"} to={'photos'}>Photos</NavLink>
                 </nav>
-                <h4 className='hostvandetail--category'>Name: <span>{van.name}</span></h4>
-                <h4 className='hostvandetail--category'>Category: <span>{van.type}</span></h4>
-                <h4 className='hostvandetail--category'>Description: <span>{van.description}</span></h4>
-                <h4 className='hostvandetail--category'>Visibility: <span>public</span></h4>
+                <Outlet context={{ van }} />
             </div>
         </div>
     )
